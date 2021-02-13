@@ -1,6 +1,15 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	var numeroAleatorio
 
+	numeroAleatorio = Math.floor(Math.random()*(20-0))+0;
+
+	if (numeroAleatorio < 11)
+	{
+		alert (numeroAleatorio)
+	}
+	else
+	{
+		alert ("numero mayor a 10")
+	}
 }//FIN DE LA FUNCIÓN
