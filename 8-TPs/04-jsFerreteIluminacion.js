@@ -20,9 +20,23 @@ function CalcularPrecio ()
     cantidadLamparitas = txtIdCantidad.value;
     cantidadLamparitas = parseInt(cantidadLamparitas);
     marcaLampara = Marca.value;
-    precioUnitarioLampara = 35 * cantidadLamparitas;
+    precioUnitarioLampara = 35;
 
-    if(cantidadLamparitas > 5)
+    switch (cantidadLamparitas) {
+        case 6:
+            descuento = 50;
+            break;
+        case 5:
+            descuento = 30;
+            case "ArgentinaLamparas":
+                descuento = 40;
+        case 4:
+            descuento = 
+    }
+
+
+
+    /* if(cantidadLamparitas > 5)
     {
         descuento = 50;
     }
@@ -74,18 +88,20 @@ function CalcularPrecio ()
                 {
                     if (cantidadLamparitas <= 2)
                     {
-                        descuento = 
+                        descuento = 0;
                     }
                 }
             }
         }
     }
 
-    descuentoFinal = precioUnitarioLampara * descuento / 100;
-    precioFinal = precioUnitarioLampara - descuentoFinal;
-    txtIdprecioDescuento.value = precioFinal;
-
-
-
-
+    if (descuento != 0){
+        descuentoFinal = precioUnitarioLampara * descuento / 100;
+        precioFinal = precioUnitarioLampara - descuentoFinal;
+    }
+    else {
+        precioFinal = precioUnitarioLampara * cantidadLamparitas;
+    }
+    
+    txtIdprecioDescuento.value = precioFinal; */
 }

@@ -1,4 +1,6 @@
-/*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
+/*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar 
+una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) 
+y luego asignarla a cuadros de textos. 
 12.   Los datos requeridos son los siguientes:
 A.	Edad, entre 18 y 90 años inclusive.
 B.	Sexo, “M” para masculino y “F” para femenino
@@ -13,6 +15,18 @@ function ComenzarIngreso ()
  	var edadIngresada;
  	var sexoIngresado;
  	var estadoCivilIngresado;
+	var sueldoBruto;
+	var legajo;
+	var nacionalidad;
+
+	do {
+		edadIngresada = prompt ("Ingrese su edad:");
+		edadIngresada = parseInt (edadIngresada);
+		
+		if (edadIngresada > 17 && edadIngresada < 91) {
+			
+		}
+	}
 
 
 
